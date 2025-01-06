@@ -1,0 +1,9 @@
+.active{
+  @apply bg-cyan-500 rounded-full p-4 text-white;
+}
+.active:hover{
+  @apply text-white;
+}
+.label{
+  @apply text-xl font-bold text-center;
+}
