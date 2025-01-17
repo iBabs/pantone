@@ -23,7 +23,7 @@ function EditBlog() {
       const fetchBlog = async () => {
         try {
           const response = await axios.get(
-            `http://localhost:4321/api/v1/blogs/${_id}`
+            `https://pantone-server.onrender.com/api/v1/blogs/${_id}`
           );
           // console.log(response.data)
           setFormData(response.data.blog)
@@ -49,7 +49,7 @@ function EditBlog() {
         setError(null);
   
         const response = await axios.patch(
-          `http://localhost:4321/api/v1/blogs/${_id}`,
+          `https://pantone-server.onrender.com/api/v1/blogs/${_id}`,
           formData
         );
   

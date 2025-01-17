@@ -26,7 +26,7 @@ const AddBlog = () => {
       setError(null);
 
       const response = await axios.post(
-        "http://localhost:4321/api/v1/blogs",
+        "https://pantone-server.onrender.com/api/v1/blogs",
         formData
       );
 

@@ -26,7 +26,7 @@ const Register = () => {
     e.preventDefault();
     try {
       const res = await axios.post(
-        "http://localhost:4321/api/v1/auth/signup",
+        "https://pantone-server.onrender.com/api/v1/auth/signup",
         formData
       );
 

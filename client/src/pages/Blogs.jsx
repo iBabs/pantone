@@ -3,7 +3,7 @@ import { FaEye, FaPen } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const Blogs = () => {
-  const blog = useFetch("http://localhost:4321/api/v1/blogs");
+  const blog = useFetch("https://pantone-server.onrender.com/api/v1/blogs");
 
   console.log(blog);
 

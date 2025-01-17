@@ -11,7 +11,7 @@ const BlogDetails = () => {
     try {
       const sure = confirm("Are you sure you want to delete this blog?");
       if(sure){
-      const response = await axios.delete(`http://localhost:4321/api/v1/blogs/${_id}`);
+      const response = await axios.delete(`https://pantone-server.onrender.com/api/v1/blogs/${_id}`);
       if(response.status === 200){
         toast.success("Blog deleted successfully 🚮")
         history("/blogs")
@@ -24,7 +24,7 @@ const BlogDetails = () => {
 
 
 
-  const blog = useFetch(`http://localhost:4321/api/v1/blogs/${_id}`);
+  const blog = useFetch(`https://pantone-server.onrender.com/api/v1/blogs/${_id}`);
 
   console.log(blog);
   const { loading, data, error } = blog;
